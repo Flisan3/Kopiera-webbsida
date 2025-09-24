@@ -15,16 +15,15 @@
         gap: 64px;
         list-style: none;
         justify-content: center;
-        -webkit-text-fill-color: aliceblue;
         font-size: large;
     }
 
     .menu-body{
         display: flex;
         flex-direction: column;
-        gap: 32px;
-        padding: 32px;
-        background-color: rgb(221, 185, 151);
+        gap: 20px;
+        padding: 55px;
+        background-color: rgb(219, 200, 165);
     }
 
     .titel-menu{
@@ -56,13 +55,91 @@
         font-size: 1.1rem;
     }
 
-    .drinks{
+    .menu-head{
         font-size: 1.4rem;
         -webkit-text-fill-color: rgb(126, 75, 40);
     }
 
-    .drink
+    .menu-description{
+        gap: 8px;
+        font-size: 1.2rem;
+        -webkit-text-fill-color: rgb(78, 48, 18);
 
+    }
+    .offer{
+        font-size: 1.1rem;
+    }
+
+    .menu-list{
+        padding: 16px;
+        font-size: 1.1rem;
+    }
+
+    .divider{
+        height: 2px;
+        color: rgb(126, 75, 40);
+        background-color: rgb(126, 75, 40);
+    }
+
+    .menu-body2{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 32px;
+        background-color: rgb(249, 227, 204);
+    }
+
+    .timebaking{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .serve{
+        font-size: 1.1rem;
+        padding: 1.5px;
+        gap: 4px;
+    }
+
+        .time-list{
+        padding: 8px;
+        font-size: 1.1rem;
+        list-style: none;
+    }
+
+    .order{
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+    }
+
+    .contacts{
+        background-color: rgb(140, 67, 34);
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 64px;
+        list-style: none;
+        gap: 8px;
+    
+    }
+
+    .nolist{
+        list-style: none;
+    }
+
+    a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        transition: color 0.2s ease-in-out, text-decoration-color 0.2s ease-in-out;
+    }
+
+    a:hover {
+        color: rgb(241, 233, 0);
+        text-decoration: underline;
+    }
+
+    .white{
+        -webkit-text-fill-color: white;
+    }
     
 </style>
 <main>
@@ -70,18 +147,18 @@
         <section>
             <nav>
                 <ul class = "navigation">
-                    <li>Om oss</li>
-                    <li>Meny</li>
-                    <li>Öppettider</li>
-                    <li>Hitta hit</li>
-                    <li>Kontakt</li>
+                    <li><a href = #about-us>Om oss</a></li>
+                    <li><a href = #our-menu>Meny</a></li>
+                    <li><a href = #times>Öppettider</a></li>
+                    <li><a href = #location>Hitta hit</a></li>
+                    <li><a href = #contacts>Kontakt</a></li>
                 </ul>
             </nav>
         </section>
 
 
     <section  class = "meny-top">
-            <h2 class = "namn">Café Mysigt</h2>
+            <h2 class = "namn" id = "about-us">Café Mysigt</h2>
             <article>
                 <h3 class = "about-us">Om oss</h3>
                 <p class = "introduction">Välkommen till Café Mysigt - stadens mysigaste plats för kaffe och fika! Vi har serverat färskbryggd kaffe och hembakade bullar sedan 1995. Hos oss hittar du alltid en varm atmosfär och vänlig service.</p>
@@ -91,13 +168,16 @@
     
     <section class = "menu-body">
         <header>
-            <h2 class = "titel-menu" >Vår meny</h2>
+            <h2 class = "titel-menu" id = "our-menu">Vår meny</h2>
         </header>
             <article>
-                <h3 class = "drinks">Drycker</h3>
-                <h3 class="drink">Alla våra drycker bryggs med kärlek</h3>
-                <p>Vi erbjuder ett brett utbud av drycker för alla smaker och tillfällen.</p>
-                <ol>
+                <h3 class = "menu-head">Drycker</h3>
+                <b><i class="menu-description">Alla våra drycker bryggs med kärlek</i></b>
+                <br>
+                
+                <p class = "offer">Vi erbjuder ett brett utbud av drycker för alla smaker och tillfällen.</p>
+                <br>
+                <ol class = "menu-list">
                     <li>Kaffe - 35 kr</li>
                     <li>Cappucino - 45 kr</li>
                     <li>Te (olika sorter) - 30 kr</li>
@@ -105,15 +185,65 @@
                 </ol>   
             </article>
     </section>
+    <hr class="divider">
 
-     <section>
-            <h2>Färskt från bageriet</h2>
+    <section class = "menu-body2">
+        <header>
+            <h2 class = "titel-menu" >Färskt från bageriet</h2>
+        </header>
             <article>
-                <h3>Bakverk</h3>
-                <h3>Bakat färskt varje dag</h3>
-                <p>Vi är öppna alla dagar året runt förutom midsommar, julafton och nyårsafton. Kom och njut av en lugn stund hos oss!</p>
+                <h3 class = "menu-head">Bakverk</h3>
+                <div class = timebaking>
+                <b class="menu-description">Bakat färskt varje dag </b>
+                <p class = "serve"> Serveras från kl. 07:00</p>
+                </div>
+                <br>
+                
+                <p class = "offer">Alla våra bakverk bakas på plats varje morgon med naturliga ingredienser och traditionella recept.</p>
+                <br>
+                <ol class = "menu-list">
+                    <li>Kanelbullar - 25 kr/st</li>
+                    <li>Chokladcroissant - 35 kr/st</li>
+                    <li>Blåbärsmuffins - 30 kr/st</li>
+                    <li>Smörgås med pålägg - 55 kr/st</li>
+                </ol>   
             </article>
     </section>
+
+    <hr class="divider">
+
+    <section class = "menu-body">
+        <header>
+            <h2 class = "titel-menu" id = "times">Öppettider</h2>
+        </header>
+            <article>
+                <h3 class = "menu-head">Veckoschema</h3>
+                <br>
+                <ul class = "time-list">
+                    <li class = "order"> <p><b>Måndag-Fredag: </b></p><time>07.00</time> - <time>18.00</time></li>
+                    <br>
+                    <li class = "order"><p><b>Lördag: </b></p> <time>08.00</time> - <time>16.00</time></li>
+                    <br>
+                    <li class = "order"><p><b>Söndag: </b></p> <time>09.00</time> - <time>15.00</time></li>
+                </ol>
+                <br>
+                <p class = "offer">Vi är öppna alla dagar året runt förutom midsommar, julafton och nyårsafton. Kom och njut av en lugn stund hos oss!</p>   
+            </article>
+    </section>
+
+    <footer class = "contacts">
+        <ul class = "nolist">
+        <li class = "white">Hitta hit</li>
+        <br>
+        <li id = "location" class = "white">Storgatan 42, 123 45 Stockholm</li>
+        <br>
+        <a href="tel:+46081234567" id = "contacts">08-123 45 67</a>
+        <br>
+        <br>
+        <a href="mailto:info@cafemysigt.se">info@cafemysigt.se</a>
+        <br>
+        </ul>
+    </footer>
 
     </head>
 </main>
