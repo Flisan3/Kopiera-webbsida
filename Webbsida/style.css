@@ -119,6 +119,9 @@
 
     .nolist{
         list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
     }
 
     a {
@@ -134,4 +137,10 @@
 
     .white{
         -webkit-text-fill-color: white;
+    }
+
+    .time-list{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
     }

@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="sv">
 
-<link rel = "stylesheet" href = "./style.css"/>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Mysigt</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
 
 <main>
-    <head>
-        <section>
+        <div>
             <nav>
                 <ul class = "navigation">
                     <li><a href = #about-us>Om oss</a></li>
@@ -15,7 +19,7 @@
                     <li><a href = #contacts>Kontakt</a></li>
                 </ul>
             </nav>
-        </section>
+        </div>
 
 
     <section  class = "meny-top">
@@ -81,12 +85,10 @@
                 <h3 class = "menu-head">Veckoschema</h3>
                 <br>
                 <ul class = "time-list">
-                    <li class = "order"> <p><b>Måndag-Fredag: </b></p><time>07.00</time> - <time>18.00</time></li>
-                    <br>
-                    <li class = "order"><p><b>Lördag: </b></p> <time>08.00</time> - <time>16.00</time></li>
-                    <br>
-                    <li class = "order"><p><b>Söndag: </b></p> <time>09.00</time> - <time>15.00</time></li>
-                </ol>
+                    <li class = "order"> <p><b>Måndag-Fredag: </b></p><time datetime="07:00">07.00</time> - <time datetime="18:00">18.00</time></li>
+                    <li class = "order"><p><b>Lördag: </b></p> <time datetime="08:00">08.00</time> - <time datetime="16:00">16.00</time></li>
+                    <li class = "order"><p><b>Söndag: </b></p> <time datetime="09:00">09.00</time> - <time datetime="15:00">15.00</time></li>
+                    </ul>
                 <br>
                 <p class = "offer">Vi är öppna alla dagar året runt förutom midsommar, julafton och nyårsafton. Kom och njut av en lugn stund hos oss!</p>   
             </article>
@@ -95,16 +97,10 @@
     <footer class = "contacts">
         <ul class = "nolist">
         <li class = "white">Hitta hit</li>
-        <br>
-        <li id = "location" class = "white">Storgatan 42, 123 45 Stockholm</li>
-        <br>
-        <a href="tel:+46081234567" id = "contacts">08-123 45 67</a>
-        <br>
-        <br>
-        <a href="mailto:info@cafemysigt.se">info@cafemysigt.se</a>
-        <br>
+        <li id = "location" class = "white" >Storgatan 42, 123 45 Stockholm</li>
+        <li><a href="tel:+46081234567" id = "contacts">08-123 45 67</a></li>
+        <li><a href="mailto:info@cafemysigt.se">info@cafemysigt.se</a></li>
         </ul>
     </footer>
 
-    </head>
 </main>
