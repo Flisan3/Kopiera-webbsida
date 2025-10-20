@@ -1,4 +1,11 @@
-    * {
+/* 
+CSS-koden ser bra ut. Du blandar lite med om du har space mellan olika
+CSS-selectors eller inte. Sätt gärna en rad space mellan varje gång.
+
+Sedan finns det även några tomma rader i vissa selectors som du kan plocka bort
+*/
+
+* {
         margin: 0;
         padding: 0;
     }
