@@ -1,3 +1,9 @@
+<!-- 
+Du skriver bra kod och har förstått väldigt bra hur de olika taggarna ska användas.
+Du behöver bara öva lite mer på indentering, komma ihåg att också använda <main></main> samt
+se till så att href är rätt skrivet.
+-->
+
 <!DOCTYPE html>
 <html lang="sv">
 
@@ -10,9 +16,11 @@
 </head>
 
 <main>
+  <!-- Du behöver inte wrappa <nav> runt en div. Den är även indenterad lite för mycket. Kolla hur jag har lagt kommentaren. Där ska din div ligga -->
         <div>
             <nav>
                 <ul class = "navigation">
+                      <!-- href ska skrivas href="". Du har glömt citattecken runt om -->
                     <li><a href = #about-us>Om oss</a></li>
                     <li><a href = #our-menu>Meny</a></li>
                     <li><a href = #times>Öppettider</a></li>
@@ -22,9 +30,11 @@
             </nav>
         </div>
 
-
+  <!-- Alla sections som kommer här under fram till <footer> ska vara wrappad i en <main></main> -->
     <section  class = "meny-top">
             <h2 class = "namn" id = "about-us">Café Mysigt</h2>
+            
+            <!-- Här behöver du inte använda <article>. Den används mest för självständigt innehåll (t.ex. nyheter eller inlägg). I det här fallet räcker det med bara <section> med rubriker och text. -->
             <article>
                 <h3 class = "about-us">Om oss</h3>
                 <p class = "introduction">Välkommen till Café Mysigt - stadens mysigaste plats för kaffe och fika! Vi har serverat färskbryggd kaffe och hembakade bullar sedan 1995. Hos oss hittar du alltid en varm atmosfär och vänlig service.</p>
@@ -38,6 +48,7 @@
         </header>
             <article>
                 <h3 class = "menu-head">Drycker</h3>
+                <!-- Om du vill ha fetstilt text, avänd <strong></strong> istället -->
                 <b><i class="menu-description">Alla våra drycker bryggs med kärlek</i></b>
                 <br>
                 
